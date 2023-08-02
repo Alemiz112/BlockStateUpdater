@@ -1,7 +1,7 @@
 package org.cloudburstmc.blockstateupdater;
 
 import org.cloudburstmc.blockstateupdater.util.tagupdater.CompoundTagUpdaterContext;
-import org.cloudburstmc.nbt.NbtMap;
+import com.nukkitx.nbt.NbtMap;
 import lombok.experimental.UtilityClass;
 
 import java.util.ArrayList;

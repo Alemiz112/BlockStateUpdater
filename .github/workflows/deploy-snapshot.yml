@@ -2,15 +2,15 @@ name: Deploy Snapshot
 on:
   push:
     branches:
-      - 'master'
+      - 'old-nbt'
 
 jobs:
   deploy:
     uses: CloudburstMC/BlockStateUpdater/.github/workflows/deploy.yml@master
     with:
-      deploy-url: "https://repo.opencollab.dev/maven-snapshots/"
+      deploy-url: "https://repo.mznt.eu/snapshots"
     secrets:
-      DEPLOY_USERNAME: ${{ secrets.OPENCOLLAB_USERNAME }}
-      DEPLOY_PASSWORD: ${{ secrets.OPENCOLLAB_PASSWORD }}
+      DEPLOY_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+      DEPLOY_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
       PGP_SECRET: ${{ secrets.MAVEN_CENTRAL_SECRET }}
       PGP_PASSPHRASE: ${{ secrets.MAVEN_CENTRAL_PASSPHRASE }}

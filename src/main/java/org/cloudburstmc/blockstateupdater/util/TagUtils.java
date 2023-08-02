@@ -1,9 +1,9 @@
 package org.cloudburstmc.blockstateupdater.util;
 
-import org.cloudburstmc.nbt.NbtList;
-import org.cloudburstmc.nbt.NbtMap;
-import org.cloudburstmc.nbt.NbtMapBuilder;
-import org.cloudburstmc.nbt.NbtType;
+import com.nukkitx.nbt.NbtList;
+import com.nukkitx.nbt.NbtMap;
+import com.nukkitx.nbt.NbtMapBuilder;
+import com.nukkitx.nbt.NbtType;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

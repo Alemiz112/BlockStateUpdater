@@ -1,7 +1,7 @@
 package org.cloudburstmc.blockstateupdater.util.tagupdater;
 
 import org.cloudburstmc.blockstateupdater.util.TagUtils;
-import org.cloudburstmc.nbt.NbtMap;
+import com.nukkitx.nbt.NbtMap;
 
 import java.util.ArrayList;
 import java.util.List;
