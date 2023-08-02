@@ -1,7 +1,6 @@
 plugins {
     id("java-library")
     id("maven-publish")
-    id("signing")
 }
 
 version = "1.20.10-ONBT-SNAPSHOT"
@@ -82,12 +81,5 @@ publishing {
                 }
             }
         }
-    }
-}
-
-signing {
-    if (System.getenv("PGP_SECRET") != null && System.getenv("PGP_PASSPHRASE") != null) {
-        useInMemoryPgpKeys(System.getenv("PGP_SECRET"), System.getenv("PGP_PASSPHRASE"))
-        sign(publishing.publications["maven"])
     }
 }
