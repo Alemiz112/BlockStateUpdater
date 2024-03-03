@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
 }
 
-version = "1.20.10-ONBT-SNAPSHOT"
+version = "1.20.70-ONBT-SNAPSHOT"
 group = "org.cloudburstmc"
 description = "Updates Minecraft: Bedrock Edition block states to the latest revision"
 
